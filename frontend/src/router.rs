@@ -9,9 +9,9 @@ use crate::app;
 pub enum Route {
     #[route()]
     Root,
-    #[route("/login")]
+    #[route("login")]
     Login,
-    #[route("/logout")]
+    #[route("logout")]
     Logout,
 }
 
