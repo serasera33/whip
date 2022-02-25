@@ -1,0 +1,19 @@
+[package]
+version = "0.1.0"
+name = "backend"
+authors = [" "]
+description = "whip backend"
+license = "MIT"
+readme = "../readme.md"
+edition = "2021"
+
+
+[dependencies]
+moon = { git = "https://github.com/MoonZoon/MoonZoon", rev = "d7da534dc09d69bace32dc548367afd49d2b59f4" }
+shared = { path = "../shared", features = ["backend"] }
+futures-signals = "0.3.24"
+once_cell = "1.9.0"
+log = { version = "0.4.14", features = ["std", "serde"] }
+#log4rs = "1.0.0"
+postgres = "0.19.2"
+sqlx = {version = "0.5.11", features = ["runtime-actix-native-tls", "postgres"]}

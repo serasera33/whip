@@ -1,0 +1,16 @@
+[package]
+version = "0.1.0"
+name = "shared"
+authors = [" "]
+description = "whip frontend"
+license = "MIT"
+readme = "../readme.md"
+edition = "2021"
+
+[dependencies]
+moonlight = { path = "../moonlight" }
+futures-signals = "0.3.24"
+
+[features]
+frontend = ["moonlight/frontend"]
+backend = ["moonlight/backend"]
